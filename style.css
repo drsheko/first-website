@@ -64,7 +64,7 @@ h2{
 
 }
 .main-right{
-    background-color: aquamarine;
+    background-color: rgb(66, 65, 65);
     position: relative;
     width: 18em;
     height: 12em;
@@ -73,29 +73,46 @@ h2{
 
 .second-title{
     text-align: center;
-    font:36px extra-bold #1f2937;
-    margin: 8px;
+    font-size: 30px; 
+    font-weight: extra-bold;
+    color: #1f2937;
+    margin: 12px 5em 20px;
 }
 
 .second-mid{
     display: flex;
     justify-content: center;
     gap: 16px;
+    margin:20px 2em 20px;
     
 }
 
-.info img{
-    border:1px blue;
-    width:15px;
-    height: 15px;
-}
-.info p{
-    text-align: center;
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 20px;
 }
 
+.box{
+    position:relative;
+    width:4 em;
+    height: 5em;
+    border:2px solid blue ;
+    border-radius: 1ch;
+    margin-bottom: 10px;
+}
+
+.info p{
+    
+    flex-shrink: 0;
+}
+
+
 .quote{
+    
     margin:0 ;
-    padding:16px  50px;
+    padding:35px  90px;
     background-color: #E5E7EB;
     font:36px light-italic #1f2937;
     text-align: center;
@@ -110,13 +127,13 @@ h2{
     justify-content: space-evenly;
 }
 .end-content{
-    background-color: ;
-    color:#E5E7EB;
-    display:flex;
-    flex-direction: column;
-
-    justify-content: flex-start;
-    gap:1px;  
+    color:#E5E7EB; 
+}
+.end-content h4 {
+    margin-bottom: 5px;
+}
+.end-content h6{
+    margin-top: 5px;
 }
 
 .end-button{
@@ -130,11 +147,11 @@ h2{
 }
 
 .end-button:hover{
-    background-color: bisque;
+    background-color: rgb(31, 3, 10);
 }
 
 footer{
-    padding:2px 22px;
+    padding:6px 22px;
     text-align: center;
     color:#E5E7EB;
     font-size: 14px;
